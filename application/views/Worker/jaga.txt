@@ -1,0 +1,180 @@
+<div class="modal fade" id="modal_ubah" tabindex="-1" role="dialog" ari-labelleadby="modal_addLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <form action="<?php echo base_url('index.php/C_Config/ubah_olt'); ?>" enctype="multipart/form-data" method="post" >
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal_addLabel">Ubah Resume</h4>
+                </div>
+                  <div class="modal-body">
+                    <div class="col-md-12">
+                    <input type="hidden" name="edit_id" class="form-control" id="edit_id" required>
+                            <div class="form-group">
+                                <label class="control-label mb-1">Judul Resume</label>
+                                    <input name="nama" id="name"type="text" class="form-control" value="<?php echo $data_resume->name ?>">
+                            </div>  
+                            <div class="form-group">
+                                <label class="control-label mb-1">Ringkasan Profile</label>
+                                <textarea name="profile" id="profile" rows="5"  class="form-control"><?php echo $data_resume->profile ?></textarea>
+                            </div>                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Kelamin</label>
+                                <select name="gender" id="gender" class="form-control">
+                                    <option value="male">Laki - laki</option>
+                                    <option value="female">Perempuan</option>
+                                </select>
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label mb-1">Tahun Kelahiran</label>
+                                <select name="birth_year" id="birth_year" class="form-control js-example-basic-single" style="width: 100%">
+                                    <option value="">-- Pilih Tahun Kelahiran --</option>
+                                    <?php  
+                                        for($i = 1970 ; $i < 2030 ; $i++){
+                                            echo '<option value="'.$i.'">'.$i.'</option>' ;                                            
+                                        }
+                                    ?>
+                                </select>
+                            </div>  
+                            <div class="form-group">
+                                <label class="control-label mb-1">Status pernikahan</label>
+                                <select name="married" id="married" class="form-control">
+                                    <option value="belum menikah">belum menikah</option>                     
+                                    <option value="menikah">menikah</option>
+                                    <option value="cerai">cerai</option>
+                                </select>
+                            </div> 
+                            <div class="row">
+                                <div class="form-group col-lg-3 col-md-6">
+                                    <label class="control-label mb-1">Provinsi</label>
+                                    <select name="provinsi" id="provinsi" class=" col-md-12 js-example-basic-single" onchange="get_kab(this.value)" style="width: 100%">
+                                    <option value="">-- Pilih Provinsi --</option>
+
+                                    <?php
+                                        $no = 0;
+                                        foreach ($data_prov as $d) {
+                                            echo '<option value="'.$d->id.'">'.$d->name_provinces.'</option>' ; 
+                                        }
+                                    ?>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-6">
+                                    <label class="control-label mb-1">Kabupaten / Kota</label>
+                                    <select name="kabupaten" id="kabupaten" class="form-control js-example-basic-single " onchange="get_kec(this.value)" style="width: 100%">
+                                         <option value="">-- Pilih Kabupaten --</option>
+                                    <?php
+                                        $no = 0;
+                                        foreach ($data_kab as $d) {
+                                            echo '<option value="'.$d->id.'">'.$d->name.'</option>' ; 
+                                        }
+                                    ?>                                         
+                                    </select>
+                                </div> 
+                                <div class="form-group col-lg-3 col-md-6">
+                                    <label class="control-label mb-1">Kecamatan</label>
+                                    <select name="kecamatan" id="kecamatan" class="form-control js-example-basic-single" onchange="get_desa(this.value)" style="width: 100%">
+                                         <option value="">-- Pilih Kecamatan --</option>
+                                    <?php
+                                        $no = 0;
+                                        foreach ($data_kec as $d) {
+                                            echo '<option value="'.$d->id.'">'.$d->name.'</option>' ; 
+                                        }
+                                    ?>                                          
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-6">
+                                    <label class="control-label mb-1">Kelurahan / Desa</label>
+                                    <select name="desa" id="desa" class="form-control js-example-basic-single" style="width: 100%">
+                                         <option value="">-- Pilih Desa --</option>
+                                    <?php
+                                        $no = 0;
+                                        foreach ($data_desa as $d) {
+                                            echo '<option value="'.$d->id.'">'.$d->name.'</option>' ; 
+                                        }
+                                    ?>                                          
+                                    </select>
+                                </div>                                                                                                    
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label mb-1">Alamat</label>
+                                    <textarea name="location" id="location" rows="3"  class="form-control"><?php echo $data_resume->location ?></textarea>
+                            </div>
+                            <div class="form-group">
+                                <select name="last_education" id="last_education" class="form-control">
+                                    <option value="SMA / SMK / STM">SMA / SMK / STM</option>
+                                    <option value="Diploma / D1 / D2 / D3">Diploma / D1 / D2 / D3</option>
+                                    <option value="S1">S1 </option>
+                                    <option value="S2">S2 </option>
+                                    <option value="S3">S3 </option>
+                                                                       
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label mb-1">Riwayat Pendidikan</label>
+                                    <textarea name="history_education" id="history_education" rows="3"  class="form-control"><?php echo $data_resume->history_education ?></textarea>
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label mb-1">Keahlian</label>
+                                        <textarea name="skill" id="skill" rows="3"  class="form-control"><?php echo $data_resume->skill ?></textarea>
+                            </div>                                                                                  
+                            <div class="form-group">
+                                <label class="control-label mb-1">Lama Bekerja</label>
+                                <select name="time_exp" id="time_exp" class="form-control">
+                                    <option value="Fresh Grauate">Fresh Grauate</option>
+                                    <option value=" < 1 Tahun"> < 1 Tahun</option>
+                                    <option value=" 1 - 2 Tahun"> 1 - 2 Tahun</option>
+                                    <option value=" 2 - 5 Tahun"> 2 - 5 Tahun</option>
+                                    <option value=" 5 - 10 Tahun"> 5 - 10 Tahun</option>
+                                    <option value=" > 10 Tahun"> > 10 Tahun</option>
+                                </select>
+                            </div>  
+                            <div class="form-group">
+                                <label class="control-label mb-1">Pengalama Bekerja</label>
+                                    <textarea name="work_exp" id="work_exp" rows="3"  class="form-control"><?php echo $data_resume->work_exp ?></textarea>
+                            </div>                                                                            
+                            <div class="form-group">
+                                <label class="control-label mb-1">Kategori Pekerjaan</label>
+                                <select id="work_category" class="form-control js-example-basic-multiple" name="work_category[]" multiple="multiple" placeholder="Pili Kategori" style="width: 100%">
+
+                                    <?php
+                                        $no = 0;
+                                        foreach ($data_category as $d) {
+                                            echo '<option value="'.$d->id_category.'">'.$d->name.'</option>' ; 
+                                        }
+                                    ?>
+                            </select>
+                            </div>                                                  
+                    </div>
+                  </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Keluar</button>
+                    <input type="submit" name="submit" class="btn btn-primary" value="Simpan">
+                </div>
+            </form>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+  </div>
+    <script>
+    jQuery(document).ready(function() {
+         birth_year = <?php echo $data_resume->birth_year ; ?> ;
+         gender = "<?php echo $data_resume->gender ; ?>"  ;
+         married = '<?php echo $data_resume->married ; ?>'  ;
+         provinsi = <?php echo $data_resume->provinsi ; ?>  ;
+         kabupaten = <?php echo $data_resume->kabupaten ; ?>  ;
+         kecamatan = <?php echo $data_resume->kecamatan ; ?>  ;
+         desa = <?php echo $data_resume->desa ; ?>  ;
+         last_education = <?php echo $data_resume->last_education ; ?>  ;
+         time_exp = <?php echo $data_resume->time_exp ; ?>  ;
+
+        jQuery('#birth_year option').filter(function () { return jQuery(this).val() == birth_year }).attr('selected', true);
+        jQuery('#gender option').filter(function () { return jQuery(this).val() == gender }).attr('selected', true);  
+        jQuery('#married option').filter(function () { return jQuery(this).val() == married }).attr('selected', true);     
+        jQuery('#provinsi option').filter(function () { return jQuery(this).val() == provinsi }).attr('selected', true); 
+        jQuery('#kabupaten option').filter(function () { return jQuery(this).val() == kabupaten }).attr('selected', true);                   
+        jQuery('#kecamatan option').filter(function () { return jQuery(this).val() == kecamatan }).attr('selected', true);                   
+        jQuery('#desa option').filter(function () { return jQuery(this).val() == desa }).attr('selected', true);                   
+        jQuery('#last_education option').filter(function () { return jQuery(this).val() == last_education }).attr('selected', true);                   
+        jQuery('#time_exp option').filter(function () { return jQuery(this).val() == time_exp }).attr('selected', true);  
+
+    });
+</script>

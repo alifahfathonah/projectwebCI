@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>MaterialPro admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- This page css -->
+    <!-- Custom CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../material/css/style.css" rel="stylesheet">
+    <link href="../material/css/colors/blue.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="highlights/highlight.min.css">
+	<!-- Custom CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+	<!-- Custom CSS -->
+	<style>
+		.font-18 {
+		    font-size: 18px !important;
+		}
+		.layout-details {
+	        display: none;
+	    }
+
+	    .layout-details-active {
+	        display: block;
+	    }
+	</style>
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Admin Pro</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                         <!-- dark Logo text -->
+                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                         <!-- Light Logo text -->    
+                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link hidden-sm-down waves-effect waves-dark" href="document.html">Documentation</a> </li>
+                        <li class="nav-item hidden-sm-down"></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap"><span class="hide-menu">Getting Started</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="document.html"
+                        aria-expanded="false"><i class="icon-chart font-18"></i>
+							<span class="hide-menu">Introduction</span></a>
+						</li>
+						<li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-start.html"
+                        aria-expanded="false"><i class="ti-notepad font-18"></i>
+							<span class="hide-menu">Gettings Started</span></a>
+						</li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Customization</span></li>
+						<li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-theme-options.html"
+                        aria-expanded="false"><i class="icon-drawar font-18"></i>
+							<span class="hide-menu">Theme Options</span></a>
+						</li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">UI Components</span></li>
+						<li class="sidebar-item"> <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                aria-expanded="false"><i class="icon-grid font-18"></i><span
+                                    class="hide-menu">Bootstrap
+                                </span></a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item"><a href="docs-ui-buttons.html" class="sidebar-link"></i><span class="hide-menu"> Buttons </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-modals.html" class="sidebar-link"></i><span class="hide-menu"> Modals </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-tabs.html" class="sidebar-link"></i><span class="hide-menu"> Tabs </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-tooltip-popover.html" class="sidebar-link"></i><span class="hide-menu"> Tooltip & Popover </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-notification.html" class="sidebar-link"></i><span class="hide-menu"> Notification </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-progressbar.html" class="sidebar-link"></i><span class="hide-menu"> Progressbar </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-typography.html" class="sidebar-link"></i><span class="hide-menu"> Typography </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-bootstrapui.html" class="sidebar-link"></i><span class="hide-menu"> Bootstrap UI </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-breadcrumb.html" class="sidebar-link"></i><span class="hide-menu"> Breadcrumb </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-listmedia.html" class="sidebar-link"></i><span class="hide-menu"> List Media </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-grid.html" class="sidebar-link"></i><span class="hide-menu"> Grid </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-carousel.html" class="sidebar-link"></i><span class="hide-menu"> Carousel </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-scrollspy.html" class="sidebar-link"></i><span class="hide-menu"> Scrollspy </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-toasts.html" class="sidebar-link"></i><span class="hide-menu"> Toasts </span></a></li>
+								<li class="sidebar-item"><a href="docs-ui-spinner.html" class="sidebar-link"></i><span class="hide-menu"> Spinner </span></a></li>
+                            </ul>
+                        </li>
+						<li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-note font-18"></i><span class="hide-menu">Customized</span></a>
+                            <ul aria-expanded="false" class="collapse first-level">
+                                <li class="sidebar-item"><a href="docs-custom-datatables.html" class="sidebar-link"></i><span class="hide-menu"> Datatables</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-table-footable.html" class="sidebar-link"></i><span class="hide-menu"> Footable Table</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-table-bootstrap.html" class="sidebar-link"></i><span class="hide-menu"> Bootstrap Table</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-cards.html" class="sidebar-link"></i><span class="hide-menu"> Cards</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-widgets.html" class="sidebar-link"></i><span class="hide-menu"> Widgets</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-chart-chartjs.html" class="sidebar-link"></i><span class="hide-menu"> ChartJs</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-chart-chartist.html" class="sidebar-link"></i><span class="hide-menu"> Chartist</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-chart-echart.html" class="sidebar-link"></i><span class="hide-menu"> Echart</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-colorpicker.html" class="sidebar-link"></i><span class="hide-menu"> Colorpicker</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-material-datepicker.html" class="sidebar-link"></i><span class="hide-menu"> Material Datepicker</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-touchspin.html" class="sidebar-link"></i><span class="hide-menu"> Bootstrap Touchspin</span></a></li>
+                                <li class="sidebar-item"><a href="docs-custom-multiselect.html" class="sidebar-link"></i><span class="hide-menu"> Multiselect</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">Extra</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-third-party.html"
+                        aria-expanded="false"><i class="icon-book-open font-18"></i>
+                            <span class="hide-menu">Third Party Plugins</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="page-content container-fluid">
+	            <!-- ============================================================== -->
+	            <!-- Bread crumb and right sidebar toggle -->
+	            <!-- ============================================================== -->
+	            <div class="row page-titles">
+	                <div class="col-md-5 align-self-center">
+	                    <h3 class="text-themecolor">Theme Options</h3>
+	                </div>
+	                <div class="col-md-7 align-self-center">
+	                    <ol class="breadcrumb float-right">
+	                        <li class="breadcrumb-item"><a href="javascript:void(0)">MaterialPro</a></li>
+	                        <li class="breadcrumb-item">Theme Options</li>
+	                    </ol>
+	                </div>
+	            </div>
+	            <!-- ============================================================== -->
+	            <!-- End Bread crumb and right sidebar toggle -->
+	            <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card shadow">
+							<div class="p-4 bg-light">
+								<h4 class="card-title">How to Change Layout ?</h4>
+								<hr>
+								<select class="form-control" id="layoutlist" onchange="showLayoutDetails();">
+                                    <option value="fix-sidebar">Fixed Sidebar</option>
+                                    <option value="fix-header">Fixed Header</option>
+                                    <option value="fix-header-sidebar">Fixed Header & Sidebar</option>
+                                    <option value="logo-center">Logo in Center</option>
+                                    <option value="single-column">Single Column</option>
+                                    <option value="boxed-layout">Boxed Layout</option>
+                                </select>
+                                <script>
+                                function showLayoutDetails() {
+                                    var id = $('#layoutlist').val();
+                                    $('.layout-details').hide();
+                                    $('#' + id).show();
+                                    return;
+                                }
+                                </script>
+                                <div id="fix-sidebar" class="layout-details layout-details-active p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Fixed Sidebar</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Fixed Sidebar</span>, add class <span class="badge badge-pill badge-success font-medium">fix-sidebar</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;fix-sidebar&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+								<div id="fix-header" class="layout-details p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Fixed Header</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Fixed Header</span>, add class <span class="badge badge-pill badge-success font-medium">fix-header</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;fix-header&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+								<div id="fix-header-sidebar" class="layout-details p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Fixed Header & Sidebar</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Fixed Header & Sidebar</span>, add class <span class="badge badge-pill badge-success font-medium">fixed-layout</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;fixed-layout&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+								<div id="logo-center" class="layout-details p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Logo Center</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Logo in center of the header</span>, add class <span class="badge badge-pill badge-success font-medium">logo-center</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;logo-center&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+								<div id="single-column" class="layout-details p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Single Column</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Single Column</span>, add class <span class="badge badge-pill badge-success font-medium">single-column</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;single-column&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+								<div id="boxed-layout" class="layout-details p-3 border mt-3">
+                                    <div class="border-bottom bg-light">
+										<h4 class="">Boxed Layout</h4>
+									</div>
+									<h5 class="mt-3"><i class="ti-angle-double-right font-16 mr-2"></i>For setting a <span class="border-bottom border-info text-info">Boxed Layout</span>, add class <span class="badge badge-pill badge-success font-medium">boxed</span> to the body tag.</h5>
+									<pre class="highlight bg-white html p-0 m-0">
+										<code class="shadow-sm px-4" style="height: 70px;">
+&lt;body class=&quot;boxed&quot;&gt;
+										</code>
+									</pre>
+                                </div>
+
+								<h4 class="card-title mt-4">How to Change Color of Navbar & Sidebar ?</h4>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: Blue</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/blue.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="blue-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="blue-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/blue.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;blue&quot; class=&quot;blue-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: default</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/default.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="default-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="default-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/default.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;default&quot; class=&quot;default-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: green</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/green.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="green-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="green-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/green.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;green&quot; class=&quot;green-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: megna</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/megna.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="megna-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="megna-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/megna.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;megna&quot; class=&quot;megna-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: purple</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/purple.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="purple-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="purple-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/purple.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;purple&quot; class=&quot;purple-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: red</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: White</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/red.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="red-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="red-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/red.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;red&quot; class=&quot;red-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: blue</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/blue-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="blue-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="blue-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/blue-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;blue-dark&quot; class=&quot;blue-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: default</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/default-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="default-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="default-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/default-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;default-dark&quot; class=&quot;default-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: green</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/green-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="green-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="green-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/green-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;green-dark&quot; class=&quot;green-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: megna</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/megna-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="megna-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="megna-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/megna-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;megna-dark&quot; class=&quot;megna-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: purple</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/purple-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="purple-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="purple-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/purple-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;purple-dark&quot; class=&quot;purple-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+								<hr>
+								<h5 class="pt-3"><i class="ti-angle-double-right font-18 mr-2"></i><span class="text-info font-medium border p-2 rounded">Header Color: red</span> && <span class="text-info font-medium border p-2 rounded">Sidebar Color: dark</span></h5>
+								<div class="mt-4 p-3 border border-info rounded">
+									<span>Go to your <span class="badge badge-info badge-pill font-medium">html file</span> and link <span class="border-bottom border-info text-info font-medium">"css/colors/red-dark.css"</span> files header after main <span class="badge badge-info badge-pill font-medium">style.css</span> . In your html file customizer code , change <span class="badge badge-danger badge-pill font-medium">class="red-theme"</span> to <span class="badge badge-success badge-pill font-medium">class="red-theme working"</span>.</span>
+								</div>
+								<pre class="highlight bg-white p-0 html m-t-30 shadow-none">
+									<code class="shadow-sm">
+&lt;!-- Link this after main style.css --&gt;
+&lt;link href=&quot;css/colors/red-dark.css&quot; id=&quot;theme&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;!-- Replace in customizer code --&gt;
+&lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot; data-theme=&quot;red-dark&quot; class=&quot;red-dark-theme working&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by MaterialPro. Designed and Developed by <a
+                    href="https://wrappixel.com">WrapPixel</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- End Page -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- apps -->
+	<script src="../material/js/jquery.slimscroll.js"></script>
+	<script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+	<script src="../material/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../material/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+	<script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="js/custom.js"></script>	
+    <!-- End JS -->
+	<script src="highlights/highlight.min.js"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+</body>
+
+</html>
